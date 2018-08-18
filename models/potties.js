@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     picLink: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
       allowNull: true
     },
     cleanliness: {
