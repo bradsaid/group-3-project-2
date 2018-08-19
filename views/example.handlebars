@@ -5,15 +5,40 @@
         <div class="card-body">
           <h5 class="card-title">Example</h5>
           <p>
-            <strong>ID</strong>: {{example.id}}</p>
+            <div class='rating-stars'>
+            <strong>ID</strong>: {{example.id}}
+             <ul id='stars'>
+                  <li class='star' data-value='1'>
+                    <i class='fa fa-star'></i>
+                  </li>
+                  <li class='star' data-value='2'>
+                    <i class='fa fa-star'></i>
+                  </li>
+                  <li class='star' data-value='3'>
+                    <i class='fa fa-star'></i>
+                  </li>
+                  <li class='star' data-value='4'>
+                    <i class='fa fa-star'></i>
+                  </li>
+                  <li class='star' data-value='5'>
+                    <i class='fa fa-star'></i>
+                  </li>
+                </ul>
+          </p>
+          </div>
           <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
+            <p>       
+                <strong>Text</strong>: {{example.text}}
+            </p>
+            <p>
+              <strong>Description:</strong> {{example.description}}
+            </p>
             <a href="/">← Back To Home</a>
+            <a href="review"> Review This Bathoom</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script src="/js/ratings.js"></script>
