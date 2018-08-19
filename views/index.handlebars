@@ -19,7 +19,7 @@
         <ul id="example-list" class="list-group">
           {{#each examples}}
           <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
+            <a href="example/{{this.id}}">{{this.text}}</a> 
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
@@ -57,5 +57,6 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcIF9eFlFoOrp6dd1oyVsiO5YS-Ikmz8&callback=initMap"
     async defer></script>
