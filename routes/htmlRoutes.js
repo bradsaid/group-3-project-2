@@ -20,6 +20,14 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/review/:id", function(req, res) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+      res.render("review", {
+        example: dbExample
+      });
+    });
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
