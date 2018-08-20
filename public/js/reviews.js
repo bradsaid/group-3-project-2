@@ -7,23 +7,29 @@ $("#submitForm").on("click", function(event) {
 
   //create avariable to hold each ids 
 //ex:
-    let multipleUse = $("#inputType").val().trim()
-    let handiAccess = $("#inputHandicap").val().trim()
-    let famRestroom = $("#inputFamily").val().trim()
-    let changingTable = $("#inputChanging").val().trim()
-    let unisex = $("#inputUnisex").val().trim()
-    let keyRequested = $("#inputKeyReq").val().trim()
+    let cleanliness = $("#inputRating").val().trim()
+    let name = $("#inputName").val().trim()
+    let addr = $("#inputAddress").val().trim()
+    let singleStall = $("#inputType").val().trim()
+    let handicapAccess = $("#inputHandicap").val().trim()
+    let famBath = $("#inputFamily").val().trim()
+    let ChangeTable = $("#inputChanging").val().trim()
+    let Unisex = $("#inputUnisex").val().trim()
+    let keyRequired = $("#inputKeyReq").val().trim()
   
 
   
 
   var newReviewVals = {
-    multipleUse: multipleUse,
-    handiAccess: handiAccess,
-    famRestroom: famRestroom,
-    chagingTable: changingTable,
-    unisex: unisex,
-    keyRequested: keyRequested
+    cleanliness: cleanliness,
+    name: name,
+    addr: addr,
+    singleStall: singleStall,
+    handicapAccess: handicapAccess,
+    famBath: famBath,
+    ChangeTable: changingTable,
+    Unisex: Unisex,
+    keyRequired: keyRequired
 
   }
 
