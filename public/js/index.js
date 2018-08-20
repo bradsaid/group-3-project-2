@@ -33,15 +33,15 @@ var API = {
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {
   API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
+    var $examples = data.map(function(potties) {
       var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+        .text(potties.name)
+        .attr("href", "/example/" + potties.id);
 
       var $li = $("<li>")
         .attr({
           class: "list-group-item",
-          "data-id": example.id
+          "data-id": potties.id
         })
         .append($a);
 
@@ -65,11 +65,11 @@ var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    name: $exampleText.val().trim(),
+    cleanliness: $exampleDescription.val().trim()
   };
 
-  if (!(example.text && example.description)) {
+  if (!(example.name && example.cleanliness)) {
     alert("You must enter an example text and description!");
     return;
   }
