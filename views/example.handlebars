@@ -4,10 +4,10 @@
       <div class="card mt-4">
         <div class="card-body">
           <h5 class="card-title">Example</h5>
+          <p><strong>ID</strong>: {{example.id}}</p>
           <p>
             <div class='rating-stars'>
-            <strong>ID</strong>: {{example.id}}
-             <ul id='stars'>
+             <ul id='stars' data-value= {{example.cleanliness}}>
                   <li class='star' data-value='1'>
                     <i class='fa fa-star'></i>
                   </li>
@@ -68,6 +68,6 @@
   </div>
 </div>
 
-<script src="/js/ratings.js"></script>
+<script src="/js/getstarratings.js"></script>
 <script>
 </script>
