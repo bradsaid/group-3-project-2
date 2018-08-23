@@ -90,6 +90,18 @@
 </form>
 
 
+   <script src="/server.js"></script>
+   <script type="text/javascript">
+    
+    AWS.config.update({
+      region: 'us-east-1',
+      accessKeyId: '',
+      secretAccessKey: ''
+    });
+    
+  </script>
+
+
 <!-- need to move this into the form and tie into the Submit button-->
 <input id="photoupload" type="file" accept="image/*">
 <button id="addphoto">Add Photo</button>

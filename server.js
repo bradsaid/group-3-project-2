@@ -3,6 +3,20 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 
+
+///// AWS 
+const aws = require('aws-sdk')
+
+aws.config.update({
+  region: 'us-east-1',
+  accessKeyId: '',
+  secretAccessKey: ''
+  //accessKeyId: process.env.S3_KEY,
+  //secretAccessKey: process.env.S3_SECRET
+})
+//////
+
+
 var db = require("./models");
 
 var app = express();
