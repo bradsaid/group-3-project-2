@@ -2,15 +2,6 @@ require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
-const aws = require('aws-sdk');
-
-
-
-aws.config.update({
-  accessKeyId: process.env.S3_KEY,
-  secretAccessKey: process.env.S3_SECRET
-});
-aws.config.region = 'us-east-1';
 
 var db = require("./models");
 
