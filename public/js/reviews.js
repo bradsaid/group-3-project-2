@@ -24,7 +24,7 @@ $("#submitForm").on("click", function(event) {
     let ChangeTable = parseInt($("#inputChanging option:selected").val());
     let Unisex = parseInt($("#inputUnisex option:selected").val());
     let keyRequired = parseInt($("#inputKeyReq option:selected").val());
-  
+    let id = parseInt($("#id").text())
 
   
 
@@ -37,7 +37,8 @@ $("#submitForm").on("click", function(event) {
     famBath: famBath,
     ChangeTable: ChangeTable,
     Unisex: Unisex,
-    keyRequired: keyRequired
+    keyRequired: keyRequired,
+    id: id
 
   }
 
@@ -49,7 +50,11 @@ $("#submitForm").on("click", function(event) {
     data: newReviewVals
   }).then(function() {
     console.log("created new review values");
-
-     //location.reload();
+    let href = $("#goback").attr("href")
+    window.location.href = href
+    //location.reload();
   });
+
+  
+
 });
