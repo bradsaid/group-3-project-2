@@ -4,8 +4,6 @@
       <div class="card mt-4">
         <div class="card-body">
           <h5 class="card-title">Restroom Location Details</h5>
-          <p><strong>ID</strong>: {{example.id}}</p>
-          <p>
             <div class='rating-stars'>
              <ul id='stars' data-value= {{example.cleanliness}}>
                   <li class='star' data-value='1'>
@@ -60,8 +58,9 @@
               <strong>Key Required:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
             </p>
 
-            <a href="/">← Back To Home</a>
-            <a href="/review/{{example.id}}">Review This Bathoom</a> 
+            <a href="/review/{{example.id}}" class="btn btn-primary float-none">Review This Bathoom</a><br><br>
+            <a href="/" class="btn btn-primary float-none">Back to Home</a>
+            
 
         </div>
       </div>
@@ -70,5 +69,3 @@
 </div>
 
 <script src="/js/getstarratings.js"></script>
-<script>
-</script>
