@@ -52,12 +52,14 @@ module.exports = function(app) {
   app.put("/api/potties/:id", function (req, res) {
     db.Potties.update ({ 
       keyRequired: req.body.keyRequired,
+      name: req.body.name
     },
     {
        where: { 
-         id: req.params.id }
+         id: req.body.id }
          }).then(function (potties_db) {
            console.log("wnet through!")
+           console.log(req.body.id)
       res.json(potties_db);
     });
   });
