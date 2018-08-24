@@ -1,7 +1,14 @@
-<form>
+<form id="entireForm">
+    
+    <!--text input-->
     <div class="form-group">
-        <label for="exampleFormControlInput1">User</label>
-        <input type="username" class="form-control" id="exampleFormControlInput1" placeholder="Please enter any username">
+        <label for="exampleFormControlInput1">Location</label>
+        <input type="address" class="form-control" id="locationName" placeholder="Please enter name of location!">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Location</label>
+        <input type="address" class="form-control" id="inputAddress" placeholder="Please location address!">
     </div>
 
     <!--Insert star rating here for cleanliness-->
@@ -30,56 +37,52 @@
 
     <!--select yes/no for other categories-->
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Single-user / Multi-user Restroom:</label>
+        <label for="exampleFormControlSelect1">Single-user Restroom?:</label>
         <select class="form-control" id="inputType">
-            <option>Multi</option>
-            <option>Single</option>
-
-
+            <option value="1">Multi</option>
+            <option value="0">Single</option>
         </select>
-
-        <label for="exampleFormControlSelect2">Handicap Accessible:</label>
-        <select class="form-control" id="inputHandicap">
-            <option>Yes</option>
-            <option>No</option>
-
-        </select>
-
-        <label for="exampleFormControlSelect3">Family Restroom</label>
-        <select class="form-control" id="inputFamily">
-            <option>No</option>
-            <option>Yes</option>
-
-
-        </select>
-
-        <label for="exampleFormControlSelect1">Changing Table</label>
-        <select class="form-control" id="inputChanging">
-            <option>Yes</option>
-            <option>No</option>
-
-        </select>
-        <label for="exampleFormControlSelect1">Unisex</label>
-        <select class="form-control" id="inputUnisex">
-            <option>No</option>
-            <option>Yes</option>
-
-
-        </select>
-
-        <label for="exampleFormControlSelect1">Key Required</label>
-        <select class="form-control" id="inputKeyReq">
-            <option>No</option>
-            <option>Yes</option>
-
-        </select>
-
-
-
-
     </div>
 
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Handicap Accessible:</label>
+        <select class="form-control" id="inputHandicap">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+            </select>
+        </div>
 
+    <div class="form-group">
+        <label for="exampleFormControlSelect3">Family Restroom</label>
+        <select class="form-control" id="inputFamily">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlSelect4">Changing Table</label>
+        <select class="form-control" id="inputChanging">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect5">Unisex</label>
+        <select class="form-control" id="inputUnisex">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+         </select>
+    </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect6">Key Required</label>
+        <select class="form-control" id="inputKeyReq">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+    </div>
 
 
     <button type="button" id="submitForm" class="btn btn-primary btn-lg btn-block">Submit</button>
@@ -93,6 +96,8 @@
 <!---->
 
 
+
+<a href="/example/{{example.id}}">Take me back to location details</a> 
 
 
 
