@@ -7,15 +7,15 @@ $("#submitForm").on("click", function(event) {
 
   //create avariable to hold each ids 
 //ex:
-    let cleanliness = $("#inputRating").val().trim()
-    let name = $("#inputName").val().trim()
+    let cleanliness = $("#stars li.selected").val()
+    let name = $("#locationName").val().trim()
     let addr = $("#inputAddress").val().trim()
-    let singleStall = $("#inputType").val().trim()
-    let handicapAccess = $("#inputHandicap").val().trim()
-    let famBath = $("#inputFamily").val().trim()
-    let ChangeTable = $("#inputChanging").val().trim()
-    let Unisex = $("#inputUnisex").val().trim()
-    let keyRequired = $("#inputKeyReq").val().trim()
+    let singleStall = parseInt($("#inputType option:selected").val());
+    let handicapAccess = parseInt($("#inputHandicap option:selected").val());
+    let famBath = parseInt($("#inputFamily option:selected").val());
+    let ChangeTable = parseInt($("#inputChanging option:selected").val());
+    let Unisex = parseInt($("#inputUnisex option:selected").val());
+    let keyRequired = parseInt($("#inputKeyReq option:selected").val());
   
 
   
@@ -27,19 +27,21 @@ $("#submitForm").on("click", function(event) {
     singleStall: singleStall,
     handicapAccess: handicapAccess,
     famBath: famBath,
-    ChangeTable: changingTable,
+    ChangeTable: ChangeTable,
     Unisex: Unisex,
     keyRequired: keyRequired
 
   }
 
+  console.log(newReviewVals);
+
   //Send POST request
-  $.ajax("/api/reviews", {
+  $.ajax("/api/potties", {
     type: "POST",
     data: newReviewVals
   }).then(function() {
-    console.log("created new review");
+    console.log("created new review values");
 
-    location.reload();
+    // location.reload();
   });
 });
