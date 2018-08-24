@@ -1,3 +1,23 @@
+
+
+<!--holds navigation buttons to go back home/// could also be added to the footer?-->
+          <div class="container">
+           <div class="row">
+              <div class="col">
+                <input type="button" class="btn btn-primary" value="Back to Home Page" onclick="location.href = '/';">
+              </div>
+          <div class="col-8">
+                  <!--empty column-->
+              </div>
+              <div class="col">
+                <!--empty column-->
+              </div>
+          </div>
+          
+          
+          
+          
+          
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
@@ -24,7 +44,7 @@
                     <i class='fa fa-star'></i>
                   </li>
                 </ul>
-          </p>
+              </p>
           </div>
 
 
@@ -60,14 +80,25 @@
               <strong>Key Required:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
             </p>
 
-            <a href="/">← Back To Home</a>
-            <a href="/review/{{example.id}}">Review This Bathoom</a> 
+            
+            
+            <input type="button" class="btn btn-primary" value="Review this Restroom" onclick="location.href = '/review/{{example.id}}';">
+
 
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+            
+            
+           
+
+     
 
 <script src="/js/getstarratings.js"></script>
 <script>
