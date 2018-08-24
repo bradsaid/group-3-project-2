@@ -50,7 +50,11 @@ $("#submitForm").on("click", function(event) {
     data: newReviewVals
   }).then(function() {
     console.log("created new review values");
-
-     //location.reload();
+    let href = $("#goback").attr("href")
+    window.location.href = href
+    //location.reload();
   });
+
+  
+
 });
