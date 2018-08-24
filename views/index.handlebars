@@ -1,4 +1,4 @@
-<div id="home">
+{{!-- <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
@@ -27,7 +27,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
 {{!-- Don't delete code here all the way to bottom - melissa --}}
         <div class="nav2" id="navbar2">
@@ -35,10 +35,10 @@
                     <input id="autocomplete" type="text" placeholder="Enter Location"
                     onFocus="geolocate()"></input>
                     </div>
-                    <a href='/mapPage'<button type="submit" id="searchBtn" class="btn btn-danger">Search</button>
+                    <button type="submit" id="searchBtn" class="btn btn-danger">Search</button>
                 </div>
         </div>    
-     
+{{!--      
     <table id="address">
         <tr>
             <td class="label" type="hidden">Street address</td>
@@ -65,10 +65,19 @@
                   <td class="wideField" colspan="3"><input class="field"
                         id="country" disabled="true" type="hidden"></input></td>
                 </tr>
-              </table>
-          
-   
+              </table> --}}
+              <div class="row">
+        <div class="col-md-8 ml-4 mr-4">
+          <div class="card ml-4">
+            <div class="card-body">
+              <h5 class="card-title">Results...</h5>
+              
+              <div id="map"></div>
+        </div>
+        </div>
+        </div>
+        </div>   
           <script src="/js/maps1.js"></script>
-                   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxYdbneHjnVzBy5VSvtXohHFKRaMh8jk&libraries=places&callback=initAutocomplete"></script>
+                   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxYdbneHjnVzBy5VSvtXohHFKRaMh8jk&libraries=places&callback=autocomplete"></script>
 
 {{!-- End of Melissa code --}}

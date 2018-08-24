@@ -11,14 +11,14 @@ module.exports = function (app) {
     });
   });
 
-  // Load mapPage page
-  app.get("/mapPage", function (req, res) {
-    db.Potties.findAll({}).then(function (dbExamples) {
-      res.render("mapPage", {
-        examples: dbExamples
-      });
-    });
-  });
+  // // Load mapPage page
+  // app.get("/mapPage", function (req, res) {
+  //   db.Potties.findAll({}).then(function (dbExamples) {
+  //     res.render("mapPage", {
+  //       examples: dbExamples
+  //     });
+  //   });
+  // });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
