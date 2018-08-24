@@ -1,14 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <!--empty column space-->
+    </div>
+    
+ <!--middle column contains form / buttons to navigate-->   
+<div class="col-8">
+      
 <form id="entireForm">
     
     <!--text input-->
     <div class="form-group">
-        <label for="exampleFormControlInput1">Location</label>
-        <input type="address" class="form-control" id="locationName" placeholder="Please enter name of location!">
+        <label for="exampleFormControlInput1">Location:</label>
+        <input type="address" class="form-control" id="locationName" placeholder="Please enter name of location! Ex: Starbucks ">
     </div>
 
     <div class="form-group">
-        <label for="exampleFormControlInput1">Location</label>
-        <input type="address" class="form-control" id="inputAddress" placeholder="Please location address!">
+        <label for="exampleFormControlInput1">Address: </label>
+        <input type="address" class="form-control" id="inputAddress" placeholder="Enter address">
     </div>
 
     <!--Insert star rating here for cleanliness-->
@@ -37,10 +58,10 @@
 
     <!--select yes/no for other categories-->
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Single-user Restroom?:</label>
+        <label for="exampleFormControlSelect1">Single-user Restroom:</label>
         <select class="form-control" id="inputType">
-            <option value="1">Multi</option>
-            <option value="0">Single</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
         </select>
     </div>
 
@@ -88,19 +109,46 @@
     <button type="button" id="submitForm" class="btn btn-primary btn-lg btn-block">Submit</button>
 
 </form>
+      
+    </div>
+    <div class="col">
+      <!--empty column space-->
+    </div>
+  </div>
 
 
-<!-- need to move this into the form and tie into the Submit button-->
-<input id="photoupload" type="file" accept="image/*">
-<button id="addphoto">Add Photo</button>
-<!---->
+
+<!--separate div for navigation buttons-->
+<div class="navigationButtons">
+  <div class="row">
+    <div class="col">
+      <!--empty column space-->
+    </div>
+    <div class="col-8">
+      
+      <!-- need to move this into the form and tie into the Submit button-->
+        <input id="photoupload" type="file" accept="image/*">
+        <button id="addphoto">Add Photo</button>
+        <!---->
+
+        <a href="/example/{{example.id}}">Back</a> 
+
+    </div>
+    <div class="col">
+      <!--empty column space-->
+    </div>
+  </div>
 
 
 
-<a href="/example/{{example.id}}">Take me back to location details</a> 
 
 
 
 <script src="/js/reviews.js"></script>
 <script src="/js/ratings.js"></script>
 <script src="/js/saveimages.js"></script>
+
+
+
+</body>
+</html>

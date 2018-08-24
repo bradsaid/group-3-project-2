@@ -2,5 +2,9 @@
 
 
 .form-group {
-    padding: 20px;
+    padding: 10px;
+}
+
+.navigationButtons {
+    padding: 30px;
 }
