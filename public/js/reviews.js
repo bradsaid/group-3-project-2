@@ -1,9 +1,17 @@
 // I will need to grab user input from their selection in the form
 //I will need to then take those values and post them by creating a route to the example.handlebars page
 
+
+
+
+
 $("#submitForm").on("click", function(event) {
   // Make sure to preventDefault on a submit event.
   event.preventDefault();
+
+  
+
+
 
   //create avariable to hold each ids 
 //ex:
@@ -36,12 +44,12 @@ $("#submitForm").on("click", function(event) {
   console.log(newReviewVals);
 
   //Send POST request
-  $.ajax("/api/potties", {
-    type: "POST",
+  $.ajax("/api/potties/:id", {
+    type: "PUT",
     data: newReviewVals
   }).then(function() {
     console.log("created new review values");
 
-    // location.reload();
+     //location.reload();
   });
 });

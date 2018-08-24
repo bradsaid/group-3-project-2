@@ -41,5 +41,21 @@ module.exports = function (app) {
     });
   });
 
+  //Put request for new review
+
+  app.put("/api/potties/:id", function (req, res) {
+    db.Potties.update ({ 
+      keyRequired: req.body.keyRequired,
+    },
+    {
+       where: { 
+         id: req.params.id }
+         }).then(function (potties_db) {
+           console.log("wnet through!")
+      res.json(potties_db);
+    });
+  });
+
+
 
 };

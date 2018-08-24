@@ -3,7 +3,7 @@
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Example</h5>
+          <h5 class="card-title">Restroom Location Details</h5>
           <p><strong>ID</strong>: {{example.id}}</p>
           <p>
             <div class='rating-stars'>
@@ -26,6 +26,8 @@
                 </ul>
           </p>
           </div>
+
+
           <p>
             <p>       
                 <strong>Name</strong>: {{example.name}}
@@ -40,24 +42,23 @@
               <strong>Picture:</strong> {{example.picLink}}
             </p>
              <p>
-              <strong># of Stalls:</strong> {{example.singleStall}}
+              <strong>Single-Stall:</strong> {{#if example.singleStall}} Yes {{else}} No {{/if}}
             </p>
             <p>
-              <strong>Handicap Access:</strong> {{example.handicapAccess}}
+              <strong>Handicap Access:</strong> {{#if example.handicapAccess}} Yes {{/if}} {{#unless example.handicapAccess}} No {{/unless}}
             </p>
             <p>
-              <strong>Family Bathroom:</strong> {{example.FamBath}}
+              <strong>Family Bathroom:</strong> {{#if example.FamBath}} Yes {{/if}} {{#unless example.FamBath}} No {{/unless}}
             </p>
              <p>
-              <strong>Changing Tables:</strong> {{example.ChangeTable}}
+              <strong>Changing Tables:</strong> {{#if example.ChangeTable}} Yes {{/if}} {{#unless example.ChangeTable}} No {{/unless}}
             </p>
              <p>
-              <strong>Unisex:</strong> {{example.Unisex}}
+              <strong>Unisex:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
             </p>
              <p>
-              <strong>Key Required:</strong> {{example.keyRequired}}
+              <strong>Key Required:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
             </p>
-
 
             <a href="/">← Back To Home</a>
             <a href="/review/{{example.id}}">Review This Bathoom</a> 
