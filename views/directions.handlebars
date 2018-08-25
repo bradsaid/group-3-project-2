@@ -1,0 +1,13 @@
+    <div id="floating-panel">
+    <b>Start: </b><input type="text" placeholder={{example.addr}} value={{example.addr}}>
+    
+    <b>End: </b><input type="text" value='bathroomLocation'>
+    </div>
+    <div id="drivingMap"></div>
+
+    {{example.id}}
+    
+    <script src="/js/directions.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxYdbneHjnVzBy5VSvtXohHFKRaMh8jk&callback=initMap">
+    </script>

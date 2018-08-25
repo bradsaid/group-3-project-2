@@ -79,9 +79,12 @@
               <strong>Key Required:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
             </p>
 
+
+            <a href="/directions/{{example.id}}"><button class="btn btn-primary" id="getDirBtn">Get Directions</button></a>
             <a href="/review/{{example.id}}" class="btn btn-primary float-none">Review This Bathoom</a><br><br>
             <a href="/" class="btn btn-primary float-none">Back to Home</a>
             
+
 
         </div>
       </div>
@@ -103,3 +106,4 @@
 <!-- Footer -->
 
 <script src="/js/getstarratings.js"></script>
+
