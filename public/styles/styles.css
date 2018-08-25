@@ -9,7 +9,7 @@ body {
   }
   
   header {
-    background: #333;
+    background: rgb(85, 74, 235);
   }
   
   h1 {
@@ -30,22 +30,24 @@ body {
   }
   
   .container {
+    background: rgb(156, 153, 204)
     width: 1024px;
     margin: 0 auto;
   }
   
   #main-bio,
-  #contact-info,
   #bio-image {
     float: left;
   }
-  
-  #main-bio {
-    width: 70%;
+
+  #contact-info {
+    float: right;
   }
   
+  
+  #main-bio,
   #contact-info {
-    width: 30%;
+    width: 50%;
   }
   
   #bio-image {
