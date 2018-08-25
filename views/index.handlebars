@@ -24,19 +24,19 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h2>Add A Bathroom!</h2>
+        <h2>Add A Restroom!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-text">Bathroom Name:</label>
+            <label for="example-text">Restroom Name:</label>
             <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
           </div>
           <div class="form-group">
-            <label for="example-description">Cleanliness (1-5)</label>
+            <label for="example-description">Cleanliness Rating (1-5)</label>
             <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
-        <h3>Bathrooms:</h3>
+        <h3>Restrooms:</h3>
         <ul id="example-list" class="list-group">
           {{#each potties}}
           <li data-id="{{this.id}}" class="list-group-item">
