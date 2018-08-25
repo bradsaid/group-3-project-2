@@ -39,14 +39,9 @@ body {
   #bio-image {
     float: left;
   }
-
-  #contact-info {
-    float: right;
-  }
   
   
-  #main-bio,
-  #contact-info {
+  #main-bio {
     width: 50%;
   }
   
