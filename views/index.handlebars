@@ -1,24 +1,97 @@
 
+<html lang="en" class="full-height">
+
+<!--Main Navigation-->
+<header>
 
 
-<div class="nav2" id="navbar2">
-  <button type="submit" id="aboutUs" class="btn btn-danger float-right ">About us</button>
-  <button type="submit" id="searchBtn" class="btn btn-danger float-right">Search</button>
-  <div class="col-md-10 mr-2 ml-2" id="locationField">
-    <input id="autocomplete" type="text" placeholder="Enter Location" onFocus="geolocate()" ></input>
-  </div>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark black">
+        <div class="container">
+                 <a class="nav-link" href="https://young-wildwood-62565.herokuapp.com/"><strong>WHIZ</strong><span class="sr-only">(current)</span></a>            
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://youtu.be/JYVBRQ7t46g">Video<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+
+    <div class="view intro-2">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-strong flex-center">
+                <div class="container">
+                    <div class="white-text text-center wow fadeInUp">
+                        <h2>WHIZ</h2>
+                        <h5>Helping find facilites near you! </h5>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout
+<main class="text-center my-5">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+Main Layout-->
+
+
+
+<!--about and link buttons-->
+
+
 <div class="row" id="resultsRow">
   <div class="col-md-8 ml-4 mr-4">
     <div class="card ml-4">
       <div class="card-body">
-        <h5 class="card-title">Results...</h5>
+        <h5 class="card-title">Results..</h5>
         <div id="map"></div>
       </div>
     </div>
   </div>
 </div>
 <script src="/js/maps1.js"></script>
+
+
+<!--search location-->
+
+
+<div class="nav2" id="navbar2">
+ <div class="col-md-10 mr-2 ml-2" id="locationField">
+    <input id="autocomplete" type="text" placeholder="Enter Location" onFocus="geolocate()" ></input>
+  </div>
+  <button type="submit" id="searchBtn" class="btn btn-danger float-right">Search</button>
+  
+</div>
+
+
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxYdbneHjnVzBy5VSvtXohHFKRaMh8jk&libraries=places&callback=autocomplete"></script>
 {{!--End of Melissa code --}}
 <div id="addbano">
@@ -53,23 +126,4 @@
 <script src="/js/index.js"></script>
 
 
-
-<!-- Footer -->
-<div class = "footerContaner">
-<footer id = "footer" class="page-footer font-small cyan darken-3">
-
-    <!-- Footer Elements -->
-    <div class="container">
-      <div class="row">
-      </div>
-    </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright WHIZ Inc.
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
 
