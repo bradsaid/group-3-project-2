@@ -15,15 +15,23 @@
 
 #footer {
     
-    background-color: #708090;
+    background-color: #0066ff;
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
     padding: 20px;
     margin-top: 40px;
+    bottom: 0;
     
     
 
 }
 
+.col-8 {
+    margin-top: 20px;
+}
+
+.row {
+    margin-top: 80px;
+}
