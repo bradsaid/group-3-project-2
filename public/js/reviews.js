@@ -15,9 +15,14 @@ $("#submitForm").on("click", function(event) {
 
   //create avariable to hold each ids 
 //ex:
-    let cleanliness = $("#stars li.selected").val()
-    let name = $("#locationName").val().trim()
-    let addr = $("#inputAddress").val().trim()
+    let cleanliness = parseInt(
+      $("#stars li.selected")
+        .last()
+        .data("value"),
+      10
+    );
+    let name = $("#locationName").val().trim();
+    let addr = $("#inputAddress").val().trim();
     let singleStall = parseInt($("#inputType option:selected").val());
     let handicapAccess = parseInt($("#inputHandicap option:selected").val());
     let famBath = parseInt($("#inputFamily option:selected").val());
@@ -43,6 +48,7 @@ $("#submitForm").on("click", function(event) {
   }
 
   console.log(newReviewVals);
+  console.log(cleanliness)
 
   //Send POST request
   $.ajax("/api/potties/:id", {
