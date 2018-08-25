@@ -1,0 +1,10 @@
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Outback Steakhouse', '10001 Westheimer Rd, Houston, TX 77042', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Kroger', '9919 Westheimer Rd, Houston, TX 77042', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('La Madeleine', '10001 Westheimer Rd #2123, Houston, TX 77042', 2, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Whataburger', '2720 W Sam Houston Pkwy S, Houston, TX 77042', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Wendys', '10780 Westheimer Rd, Houston, TX 77042', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('El Tiempo Cantina', '2605 S Gessner Rd, Houston, TX 77063', 4, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Chuys', '9350 Westheimer Rd, Houston, TX 77063', 5, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Pappas Bar-B-Q', '9797 Westheimer Rd, Houston, TX 77042', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('Krispy Creme Doughnuts', '8611 Westheimer Rd, Houston, TX 77063', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');
+INSERT INTO `potties` (`name`, `addr`, `cleanliness`, `createdAt`, `updatedAt`) VALUES ('LA Crawfish Shack', '5858 South Gessner Drive #130, Houston, TX 77036', 3, '2018-08-24 20:14:03', '2018-08-24 20:14:03');

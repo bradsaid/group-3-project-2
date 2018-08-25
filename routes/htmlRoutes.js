@@ -28,6 +28,17 @@ module.exports = function (app) {
       });
     });
   });
+    // MELISSA ADDED to route to direction page
+  app.get("/directions/:id", function(req, res) {
+    db.Potties.findOne({ where: { id: req.params.id } }).then(function(
+      dbPotties
+    ) {
+      res.render("directions", {
+        name: dbPotties.name,
+        id: dbPotties.id
+      });
+    });
+  });
 
   app.get("/review/:id", function (req, res) {
     db.Potties.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
