@@ -1,0 +1,29 @@
+
+
+
+.form-group {
+    padding: 10px;
+}
+
+.navigationButtons {
+    padding: 30px;
+}
+
+.py-5 {
+    height: 20px;
+}
+
+#footer {
+    
+    background-color: #708090;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    
+    
+
+}
+
