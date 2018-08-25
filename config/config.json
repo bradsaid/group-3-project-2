@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "MaPa1613",
-    "database": "potties_db",
+    "password": null,
+    "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql"
   },

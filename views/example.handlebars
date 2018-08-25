@@ -3,9 +3,11 @@
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
-          <h5 class="card-title">Restroom Location Details</h5>
+          <h5 class="card-title">Example</h5>
+          <p>
             <div class='rating-stars'>
-             <ul id='stars' data-value= {{example.cleanliness}}>
+            <strong>ID</strong>: {{example.id}}
+             <ul id='stars'>
                   <li class='star' data-value='1'>
                     <i class='fa fa-star'></i>
                   </li>
@@ -24,8 +26,6 @@
                 </ul>
           </p>
           </div>
-
-
           <p>
             <p>       
                 <strong>Name</strong>: {{example.name}}
@@ -40,27 +40,27 @@
               <strong>Picture:</strong> {{example.picLink}}
             </p>
              <p>
-              <strong>Single-Stall:</strong> {{#if example.singleStall}} Yes {{else}} No {{/if}}
+              <strong># of Stalls:</strong> {{example.singleStall}}
             </p>
             <p>
-              <strong>Handicap Access:</strong> {{#if example.handicapAccess}} Yes {{/if}} {{#unless example.handicapAccess}} No {{/unless}}
+              <strong>Handicap Access:</strong> {{example.handicapAccess}}
             </p>
             <p>
-              <strong>Family Bathroom:</strong> {{#if example.FamBath}} Yes {{/if}} {{#unless example.FamBath}} No {{/unless}}
+              <strong>Family Bathroom:</strong> {{example.FamBath}}
             </p>
              <p>
-              <strong>Changing Tables:</strong> {{#if example.ChangeTable}} Yes {{/if}} {{#unless example.ChangeTable}} No {{/unless}}
+              <strong>Changing Tables:</strong> {{example.ChangeTable}}
             </p>
              <p>
-              <strong>Unisex:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
+              <strong>Unisex:</strong> {{example.Unisex}}
             </p>
              <p>
-              <strong>Key Required:</strong> {{#if example.Unisex}} Yes {{/if}} {{#unless example.Unisex}} No {{/unless}}
+              <strong>Key Required:</strong> {{example.keyRequired}}
             </p>
 
-            <a href="/review/{{example.id}}" class="btn btn-primary float-none">Review This Bathoom</a><br><br>
-            <a href="/" class="btn btn-primary float-none">Back to Home</a>
-            
+
+            <a href="/">← Back To Home</a>
+            <a href="/review/{{example.id}}">Review This Bathoom</a> 
 
         </div>
       </div>
@@ -68,24 +68,6 @@
   </div>
 </div>
 
-
-<!-- Footer -->
-<div class = "footerContaner">
-<footer id = "footer" class="page-footer font-small cyan darken-3">
-
-    <!-- Footer Elements -->
-    <div class="container">
-      <div class="row">
-      </div>
-    </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright WHIZ Inc.
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
-<script src="/js/getstarratings.js"></script>
+<script src="/js/ratings.js"></script>
+<script>
+</script>
