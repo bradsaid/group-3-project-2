@@ -1,59 +1,36 @@
 <!DOCTYPE html>
+<html>
 
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!--google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  
-  <!--style sheets-->
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/styles/ratings.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" type="text/css" media="screen" href="/styles/mapStyle.css">
-  <link rel="stylesheet" href="/styles/reviewForm.css" media="screen" title="no title" charset="utf-8">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
-
-  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
-  
-  
-  <script type="text/javascript">
-    AWS.config.update({
-      accessKeyId: 'keyhere',
-      secretAccessKey: 'keyhere'
-    });
-    AWS.config.region = 'us-east-1';
-  </script>
   <title>Home Page</title>
   <meta name="viewport" content="initial-scale=1.0">
-  <meta charset="utf-8">
-  <style>
-    /* Always set the map height explicitly to define the size of the div
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    
+    </style>
 </head>
 
 <body>
   {{{body}}}
 
-
-
-
+  <script src="public/js/maps.js"></script>
 </body>
 
 </html>

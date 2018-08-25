@@ -1,41 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reviews</title>
-</head>
-<body>
-    
-
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <!--empty column space-->
-    </div>
-    
- <!--middle column contains form / buttons to navigate-->   
-<div class="col-8">
-      
-<form id="entireForm">
-    
-    <!--text input-->
+<form>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Location:</label>
-        <input type="address" class="form-control" id="locationName" placeholder="Please enter name of location! Ex: Starbucks ">
-    </div>
-
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Address: </label>
-        <input type="address" class="form-control" id="inputAddress" placeholder="Enter address">
+        <label for="exampleFormControlInput1">User</label>
+        <input type="username" class="form-control" id="exampleFormControlInput1" placeholder="Please enter any username">
     </div>
 
     <!--Insert star rating here for cleanliness-->
     <p>
         <div class='rating-stars'>
-            <h1 id="id" hidden> {{example.id}}</h1>
+            <strong>ID</strong>: {{example.id}}
             <ul id='stars'>
                 <li class='star' data-value='1'>
                     <i class='fa fa-star'></i>
@@ -58,121 +30,61 @@
 
     <!--select yes/no for other categories-->
     <div class="form-group">
-        <label for="exampleFormControlSelect1">Single-user Restroom:</label>
+        <label for="exampleFormControlSelect1">Single-user / Multi-user Restroom:</label>
         <select class="form-control" id="inputType">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-        </select>
-    </div>
+            <option>Multi</option>
+            <option>Single</option>
 
-    <div class="form-group">
+
+        </select>
+
         <label for="exampleFormControlSelect2">Handicap Accessible:</label>
         <select class="form-control" id="inputHandicap">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-            </select>
-        </div>
+            <option>Yes</option>
+            <option>No</option>
 
-    <div class="form-group">
+        </select>
+
         <label for="exampleFormControlSelect3">Family Restroom</label>
         <select class="form-control" id="inputFamily">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-        </select>
-    </div>
+            <option>No</option>
+            <option>Yes</option>
 
-    <div class="form-group">
-        <label for="exampleFormControlSelect4">Changing Table</label>
+
+        </select>
+
+        <label for="exampleFormControlSelect1">Changing Table</label>
         <select class="form-control" id="inputChanging">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-        </select>
-    </div>
+            <option>Yes</option>
+            <option>No</option>
 
-      <div class="form-group">
-        <label for="exampleFormControlSelect5">Unisex</label>
+        </select>
+        <label for="exampleFormControlSelect1">Unisex</label>
         <select class="form-control" id="inputUnisex">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-         </select>
-    </div>
+            <option>No</option>
+            <option>Yes</option>
 
-      <div class="form-group">
-        <label for="exampleFormControlSelect6">Key Required</label>
-        <select class="form-control" id="inputKeyReq">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
+
         </select>
+
+        <label for="exampleFormControlSelect1">Key Required</label>
+        <select class="form-control" id="inputKeyReq">
+            <option>No</option>
+            <option>Yes</option>
+
+        </select>
+
+
     </div>
 
-    
+
+
+
     <button type="button" id="submitForm" class="btn btn-primary btn-lg btn-block">Submit</button>
 
 </form>
-      
-    </div>
-    <div class="col">
-      <!--empty column space-->
-    </div>
-  </div>
 
-
-
-<!--separate div for navigation buttons-->
-<div class="navigationButtons">
-  <div class="row">
-    <div class="col">
-      <!--empty column space-->
-    </div>
-    <div class="col-8">
-      
-      <!-- need to move this into the form and tie into the Submit button-->
-        <div hidden>
-        <input id="photoupload" type="file" accept="image/*">
-        <button id="addphoto">Add Photo</button>
-        </div>
-        <!---->
-
-       
-     
-        <a href="/example/{{example.id}}" class="btn btn-primary btn-lg btn-block" id="goback">Back to Bathroom Description</a>
-        <br> 
-        <a href="/"class="btn btn-primary btn-lg btn-block">Back to Home Page</a>
-
-    </div>
-    <div class="col">
-      <!--empty column space-->
-    </div>
-  </div>
-
-<!-- Footer -->
-<div class = "footerContaner">
-<footer id = "footer" class="page-footer font-small cyan darken-3">
-
-    <!-- Footer Elements -->
-    <div class="container">
-      <div class="row">
-      </div>
-    </div>
-    <!-- Footer Elements -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright WHIZ Inc.
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
-
-</div>
 
 
 <script src="/js/reviews.js"></script>
 <script src="/js/ratings.js"></script>
-<script src="/js/saveimages.js"></script>
-
-
-
-</body>
-</html>
