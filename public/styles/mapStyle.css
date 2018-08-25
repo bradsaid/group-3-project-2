@@ -8,7 +8,9 @@
     margin-top: 5px;
 }
 #aboutUs {
-    margin: 20px; 
+    margin: 20px;
+    margin-right: auto; 
+  
 }
 #searchBtn {
     margin: 20px;
@@ -50,18 +52,18 @@
 /* Add a blue background color to the 2nd header bar */
 #navbar2 {
     overflow: hidden;
-    background-color: #1c4969;
+    /*background-color: #ddd; */
     padding-left: 280px;
     padding-top: 10px;
     align-self: center;
-    background-image: url("../indexPage/pictures/toiletPaper.png");
+    /*background-image: url("../indexPage/pictures/toiletPaper.png"); */
 }
 /* Style the search box inside the navigation bar */
 .nav2 input[type=text] {
     float: right;
     padding: 10px;
     border: none;
-    width: 50%;
+    width: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 16px;
@@ -94,4 +96,32 @@ body {
 }
 
 
+#topNavbar {
+    background-color: #1c4969;
+}
+
+
+
+/* md bootstrap */
+
+.view {
+    background: url("/Users/sendyturcios/Desktop/group-3-project-2/public/indexPage/pictures/cloudsbackground.jpg");
+    background-size: cover;
+    background-color: #0066ff;
+    
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+#addbano {
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
 
