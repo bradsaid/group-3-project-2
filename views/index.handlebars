@@ -1,20 +1,18 @@
 
 
 
-
 <div class="nav2" id="navbar2">
+  <button type="submit" id="aboutUs" class="btn btn-danger float-right ">About us</button>
+  <button type="submit" id="searchBtn" class="btn btn-danger float-right ">Search</button>
   <div class="col-md-10 mr-2 ml-2" id="locationField">
     <input id="autocomplete" type="text" placeholder="Enter Location" onFocus="geolocate()"></input>
   </div>
-  <button type="submit" id="searchBtn" class="btn btn-danger">Search</button>
 </div>
-
-<div class="row">
+<div class="row" id="resultsRow">
   <div class="col-md-8 ml-4 mr-4">
     <div class="card ml-4">
       <div class="card-body">
         <h5 class="card-title">Results...</h5>
-
         <div id="map"></div>
       </div>
     </div>
@@ -23,24 +21,23 @@
 <script src="/js/maps1.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLxYdbneHjnVzBy5VSvtXohHFKRaMh8jk&libraries=places&callback=autocomplete"></script>
 {{!--End of Melissa code --}}
-
 <div id="addbano">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h2>Add A Restroom!</h2>
+        <h2>Add A Bathroom!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-text">Restroom Name:</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Restroom Name">
+            <label for="example-text">Bathroom Name:</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
           </div>
           <div class="form-group">
-            <label for="example-description">Cleanliness Rating (1-5)</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Cleanliness Rating"></textarea>
+            <label for="example-description">Cleanliness (1-5)</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
-        <h3>Restrooms:</h3>
+        <h3>Bathrooms:</h3>
         <ul id="example-list" class="list-group">
           {{#each potties}}
           <li data-id="{{this.id}}" class="list-group-item">
@@ -53,7 +50,5 @@
     </div>
   </div>
 </div>
-
-
 <script src="/js/index.js"></script>
 
